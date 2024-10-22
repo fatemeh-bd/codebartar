@@ -1,0 +1,33 @@
+import React from "react";
+import FlexBetween from "../flex/FlexBetween";
+import FlexItemCenter from "../flex/FlexItemCenter";
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  ShoppingCartIcon,
+  UserIcon,
+} from "@heroicons/react/24/outline";
+import { Counter, Logo } from "./Header";
+
+const MobileHeader = () => {
+  return (
+    <FlexBetween>
+      <FlexItemCenter>
+        <Bars3Icon className="size-10 bg-secondary-100 rounded-full p-2" />
+
+        <Logo />
+      </FlexItemCenter>
+
+      <FlexItemCenter>
+        <div className="relative">
+          <ShoppingCartIcon className="size-9 bg-secondary-100 rounded-full p-2" />
+          <Counter value={2} />
+        </div>
+        <UserIcon className="size-9 bg-secondary-100 rounded-full p-2" />
+        <ChevronDownIcon className="size-5" />
+      </FlexItemCenter>
+    </FlexBetween>
+  );
+};
+
+export default MobileHeader;

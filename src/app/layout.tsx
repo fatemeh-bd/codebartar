@@ -1,16 +1,33 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./_components/header/Header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const yekanBakh = localFont({
+  src: [
+    {
+      path: "./assets/fonts/yekan/woff/YekanBakh-SemiBold.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./assets/fonts/yekan/woff/YekanBakh-Bold.woff",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./assets/fonts/yekan/woff/YekanBakh-ExtraBold.woff",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./assets/fonts/yekan/woff/YekanBakh-ExtraBlack.woff",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-yakan",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +41,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${yekanBakh.variable} ${yekanBakh.variable} antialiased font-[family-name:var(--font-yakan)] `}
       >
-        {children}
+        <Header />
+        <main className="flex-auto py-5 max-w-7xl mx-auto">{children}</main>
+
+        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
       </body>
     </html>
   );
