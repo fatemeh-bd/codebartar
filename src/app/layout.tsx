@@ -46,7 +46,7 @@ export default function RootLayout({
         className={`${yekanBakh.variable} ${yekanBakh.variable} antialiased font-[family-name:var(--font-yakan)] `}
       >
         <Header />
-        <main className="flex-auto py-5 max-w-7xl mx-auto">{children}</main>
+        <main className="flex-auto p-5 max-w-7xl mx-auto">{children}</main>
 
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
       </body>

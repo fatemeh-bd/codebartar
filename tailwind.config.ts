@@ -20,6 +20,9 @@ const config: Config = {
         },
         black: "#09090b",
       },
+      fontSize:{
+        xl:"1.125rem"
+      }
     },
   },
   plugins: [],

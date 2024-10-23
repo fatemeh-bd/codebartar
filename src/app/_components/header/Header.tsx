@@ -5,6 +5,7 @@ import Link from "next/link";
 import useScreenWidth from "../hooks/useScreenWidth";
 import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
+import { startMobileSize } from "@/_utiles/enums";
 export const navItems = [
   {
     text: "دسته بندی آمـــوزشها",
@@ -22,10 +23,10 @@ export const navItems = [
   { text: "دوره ها", childrens: [{ text: "لینکهای مفید", path: "/" }] },
 ];
 const Header = () => {
-  const isMobile = useScreenWidth(768);
+  const isMobile = useScreenWidth(startMobileSize);
   return (
-    <header className="bg-white/80 backdrop-blur-xl p-4 border-b border-border border-secondary-500 sticky top-0 z-30">
-      <div className="relative mx-auto max-w-7xl">
+    <header className="bg-white/80 backdrop-blur-xl py-4 border-b border-border border-secondary-500 sticky top-0 z-[999]">
+      <div className="relative mx-auto px-5 max-w-7xl">
         {isMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </header>
@@ -50,8 +51,8 @@ export const Logo = () => {
         ></path>
       </svg>
       <span className="flex flex-col items-start">
-        <span className="font-semibold text-sm text-muted">آکــــادمـــی</span>
-        <span className="font-black text-xl">نـــابــــغه</span>
+        <span className="font-semibold text-sm text-muted">آکـادمـــــی</span>
+        <span className="font-black text-xl">کد برتـــر</span>
       </span>
     </Link>
   );

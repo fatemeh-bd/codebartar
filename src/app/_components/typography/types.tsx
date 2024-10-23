@@ -1,4 +1,4 @@
-import { ColorType, Sizes } from "@/app/_components/_utiles/enums";
+import { ColorType, Sizes } from "@/_utiles/enums";
 import React from "react";
 
 export interface ParagraphType {

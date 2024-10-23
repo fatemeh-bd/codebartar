@@ -8,7 +8,7 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import Paragraph from "../typography/Paragraph";
-import { ColorType, Sizes } from "../_utiles/enums";
+import { ColorType, Sizes } from "../../../_utiles/enums";
 
 const DesktopHeader = () => {
   return (
