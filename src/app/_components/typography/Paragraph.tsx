@@ -21,7 +21,7 @@ const Paragraph = ({ children, type, size, className }: ParagraphType) => {
           : type === ColorType.SUCCSESS
           ? "text-success"
           : "text-secondary-700"
-      } ${className ?? className}`}
+      } ${className || ""}`}
     >
       {children}
     </p>

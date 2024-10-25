@@ -45,7 +45,7 @@ const WhayUs = () => {
   return (
     <div className="my-8 relative">
       <Title className="mx-auto relative bg-background w-fit z-50 py-3  border border-border rounded-2xl px-8">
-        چرا آکــــادمـــــی کد برتـــر
+        چرا آکــــادمـــــی کد برتـــر ؟
       </Title>
       <div className="relative -mt-7 z-10 pt-12 bg-secondary-200 rounded-3xl">
         <div className="flex flex-wrap items-center justify-center gap-10 md:pb-10 pb-5 md:px-10 px-5">

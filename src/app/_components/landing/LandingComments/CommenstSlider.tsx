@@ -12,12 +12,12 @@ import { Navigation } from "swiper/modules";
 const CommenstSlider = () => {
   return (
     <Swiper
-        mousewheel={true}
-        effect={"cards"}
+      mousewheel={true}
+      effect={"cards"}
       navigation={true}
       grabCursor={true}
       modules={[EffectCards, Navigation]}
-      className="commnetSwiper"
+      className="commentSwiper"
     >
       <SwiperSlide className="rounded-2xl commentShadow">
         <div className="flex flex-col text-center bg-white space-y-6 items-center rounded-2xl p-8 border border-secondary-500">

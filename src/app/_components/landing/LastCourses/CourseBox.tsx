@@ -18,6 +18,7 @@ import Toman from "../../Toman";
 import { CourseType } from "../types";
 import MainButton from "../../buttons/MainButton";
 import Teacher from "./Teacher";
+import Like from "./Like";
 const CourseBox = ({ data }: { data: CourseType }) => {
   return (
     <div>
@@ -66,7 +67,7 @@ const CourseBox = ({ data }: { data: CourseType }) => {
           </FlexCenter>
         </FlexItemCenter>
         <FlexBetween>
-          <Teacher name={'مدرس دوره:'} desc={data.name} avatar={data.avatar} />
+          <Teacher name={"مدرس دوره:"} desc={data.name} avatar={data.avatar} />
           <FlexItemCenter>
             {data.type === "free" ? (
               <Paragraph
@@ -96,12 +97,7 @@ const CourseBox = ({ data }: { data: CourseType }) => {
             مشاهده دوره
             <ArrowUpLeftIcon className="size-6" />
           </MainButton>
-          <MainButton
-            themeType={ColorType.SECONDARY}
-            className="size-12 !p-2 rounded-full text-secondary-700  hover:!text-rose-600"
-          >
-            <HeartIcon className="size-5" />
-          </MainButton>
+          <Like />
         </FlexCenter>
       </div>
     </div>

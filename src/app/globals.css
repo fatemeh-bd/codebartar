@@ -34,6 +34,18 @@ body {
   color: var(--foreground);
 }
 
+@media (max-width: 768px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .commentSwiper .swiper-button-next,
+  .commentSwiper .swiper-button-prev {
+    top: 70% !important;
+  }
+}
+
 .swiper .swiper-button-next:after,
 .swiper .swiper-button-prev:after {
   font-size: 1.125rem;
@@ -44,9 +56,9 @@ body {
   opacity: 0 !important;
 }
 
-.swiper-3d .swiper-slide-shadow{
-  background:  transparent !important;
+.swiper-3d .swiper-slide-shadow {
+  background: transparent !important;
 }
-.commentShadow{
+.commentShadow {
   box-shadow: 0px 16px 23px -11px #10101017;
 }

@@ -8,12 +8,14 @@ import { ColorType, Sizes } from "@/_utiles/enums";
 const SectionTitle = ({
   title,
   desciption,
+  className,
 }: {
   title: string;
   desciption: string;
+  className?: string;
 }) => {
   return (
-    <FlexItemCenter gap="gap-4">
+    <FlexItemCenter gap="gap-4" className={className || ""}>
       <AcademyIcon />
       <div className="space-y-2 w-[90%]">
         <Title size={Sizes.lg} color={ColorType.PRIMARY}>
