@@ -1,17 +1,17 @@
 "use client";
 import React from "react";
-import GradientBox from "../../GradientBox";
-import Title from "../../typography/Title";
-import Paragraph from "../../typography/Paragraph";
+import GradientBox from "../../../GradientBox";
+import Title from "../../../typography/Title";
+import Paragraph from "../../../typography/Paragraph";
 import {
   AcademicCapIcon,
   ArrowLeftIcon,
   ArrowUpLeftIcon,
 } from "@heroicons/react/16/solid";
-import FlexCenter from "../../flex/FlexCenter";
+import FlexCenter from "../../../flex/FlexCenter";
 import { ColorType, Sizes } from "@/_utiles/enums";
-import MainButton from "../../buttons/MainButton";
-import FlexBetween from "../../flex/FlexBetween";
+import MainButton from "../../../buttons/MainButton";
+import FlexBetween from "../../../flex/FlexBetween";
 import CourseBox from "./CourseBox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

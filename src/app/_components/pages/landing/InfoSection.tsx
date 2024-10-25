@@ -1,5 +1,5 @@
 import React from "react";
-import GradientBox from "../GradientBox";
+import GradientBox from "../../GradientBox";
 import SectionTitle from "./SectionTitle";
 import CourseBox2 from "./LastCourses/CourseBox2";
 

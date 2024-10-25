@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/header/Header";
+import Footer from "./_components/footer/Footer";
 
 const yekanBakh = localFont({
   src: [
@@ -47,8 +48,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex-auto p-5 max-w-7xl mx-auto">{children}</main>
-
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+        <Footer />
       </body>
     </html>
   );

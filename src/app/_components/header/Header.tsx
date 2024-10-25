@@ -51,7 +51,7 @@ export const Logo = () => {
         ></path>
       </svg>
       <span className="flex flex-col items-start">
-        <span className="font-semibold text-sm text-muted">آکـادمـــــی</span>
+        <span className="font-semibold text-sm !text-secondary-700">آکـادمـــــی</span>
         <span className="font-black text-xl">کد برتـــر</span>
       </span>
     </Link>

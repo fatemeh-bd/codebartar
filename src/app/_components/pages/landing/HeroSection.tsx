@@ -1,12 +1,12 @@
 import React from "react";
-import FlexItemCenter from "../flex/FlexItemCenter";
-import MainButton from "../buttons/MainButton";
-import Paragraph from "../typography/Paragraph";
+import FlexItemCenter from "../../flex/FlexItemCenter";
+import MainButton from "../../buttons/MainButton";
+import Paragraph from "../../typography/Paragraph";
 import { TicketIcon } from "@heroicons/react/24/outline";
 import { ArrowUpLeftIcon } from "@heroicons/react/16/solid";
 import { ColorType, Sizes } from "@/_utiles/enums";
 import Image from "next/image";
-import GradientBox from "../GradientBox";
+import GradientBox from "../../GradientBox";
 
 const HeroSection = () => {
   return (

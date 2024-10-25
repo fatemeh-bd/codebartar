@@ -1,7 +1,17 @@
 import React from "react";
 
-const FlexBetween = ({ children }: { children: React.ReactNode }) => {
-  return <div className="flex items-center justify-between">{children}</div>;
+const FlexBetween = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={`flex items-center justify-between ${className || ""}`}>
+      {children}
+    </div>
+  );
 };
 
 export default FlexBetween;

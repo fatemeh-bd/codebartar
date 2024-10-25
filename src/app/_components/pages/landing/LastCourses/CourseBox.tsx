@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import Paragraph from "../../typography/Paragraph";
+import Paragraph from "../../../typography/Paragraph";
 import { ColorType, Sizes } from "@/_utiles/enums";
-import Title from "../../typography/Title";
-import FlexCenter from "../../flex/FlexCenter";
+import Title from "../../../typography/Title";
+import FlexCenter from "../../../flex/FlexCenter";
 import {
   ArrowUpLeftIcon,
   ClockIcon,
@@ -12,11 +12,11 @@ import {
   Square2StackIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
-import FlexItemCenter from "../../flex/FlexItemCenter";
-import FlexBetween from "../../flex/FlexBetween";
-import Toman from "../../Toman";
+import FlexItemCenter from "../../../flex/FlexItemCenter";
+import FlexBetween from "../../../flex/FlexBetween";
+import Toman from "../../../Toman";
 import { CourseType } from "../types";
-import MainButton from "../../buttons/MainButton";
+import MainButton from "../../../buttons/MainButton";
 import Teacher from "./Teacher";
 import Like from "./Like";
 const CourseBox = ({ data }: { data: CourseType }) => {

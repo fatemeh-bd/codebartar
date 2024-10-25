@@ -1,9 +1,9 @@
 import React from "react";
-import FlexBetween from "../../flex/FlexBetween";
-import Title from "../../typography/Title";
+import FlexBetween from "../../../flex/FlexBetween";
+import Title from "../../../typography/Title";
 import { ColorType, Sizes } from "@/_utiles/enums";
-import FlexItemCenter from "../../flex/FlexItemCenter";
-import Paragraph from "../../typography/Paragraph";
+import FlexItemCenter from "../../../flex/FlexItemCenter";
+import Paragraph from "../../../typography/Paragraph";
 import { AcademyIcon } from "../LastCourses/LastCourses";
 import CommenstSlider from "./CommenstSlider";
 import SectionTitle from "../SectionTitle";

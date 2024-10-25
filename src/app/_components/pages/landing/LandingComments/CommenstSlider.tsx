@@ -4,7 +4,7 @@ import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import Paragraph from "../../typography/Paragraph";
+import Paragraph from "../../../typography/Paragraph";
 import Teacher from "../LastCourses/Teacher";
 import { Sizes } from "@/_utiles/enums";
 import { Navigation } from "swiper/modules";

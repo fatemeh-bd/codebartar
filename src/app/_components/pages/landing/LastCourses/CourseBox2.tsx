@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Title from "../../typography/Title";
-import FlexItemCenter from "../../flex/FlexItemCenter";
-import Paragraph from "../../typography/Paragraph";
+import Title from "../../../typography/Title";
+import FlexItemCenter from "../../../flex/FlexItemCenter";
+import Paragraph from "../../../typography/Paragraph";
 import { Sizes } from "@/_utiles/enums";
 import Link from "next/link";
-import FlexBetween from "../../flex/FlexBetween";
+import FlexBetween from "../../../flex/FlexBetween";
 import Like from "./Like";
 import { ClockIcon } from "@heroicons/react/24/outline";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../typography/Title";
+import Title from "../../typography/Title";
 import { BookOpenIcon } from "@heroicons/react/20/solid";
 import {
   ChatBubbleLeftRightIcon,

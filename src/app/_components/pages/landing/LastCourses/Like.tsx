@@ -1,5 +1,5 @@
 import React from "react";
-import MainButton from "../../buttons/MainButton";
+import MainButton from "../../../buttons/MainButton";
 import { HeartIcon } from "@heroicons/react/20/solid";
 import { ColorType } from "@/_utiles/enums";
 

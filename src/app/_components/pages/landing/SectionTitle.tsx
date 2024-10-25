@@ -1,8 +1,8 @@
 import React from "react";
-import FlexItemCenter from "../flex/FlexItemCenter";
+import FlexItemCenter from "../../flex/FlexItemCenter";
 import { AcademyIcon } from "./LastCourses/LastCourses";
-import Title from "../typography/Title";
-import Paragraph from "../typography/Paragraph";
+import Title from "../../typography/Title";
+import Paragraph from "../../typography/Paragraph";
 import { ColorType, Sizes } from "@/_utiles/enums";
 
 const SectionTitle = ({
