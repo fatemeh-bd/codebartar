@@ -3,12 +3,14 @@
 @tailwind utilities;
 * {
   box-sizing: border-box;
-  transition-duration: 0.3s;
-  animation-duration: 0.3s;
+  transition-duration: 0.1s;
+  animation-duration: 0.1s;
   font-family: var(--font-yakan);
 }
 :root {
   --background: #fff;
+  --border: #e4e4e7;
+  --foreground: #09090b;
 }
 body {
   direction: rtl;
@@ -16,4 +18,35 @@ body {
 
 .bg-background {
   background-color: var(--background);
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.swiper .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-3d .swiper-slide-shadow{
+  background:  transparent !important;
+}
+.commentShadow{
+  box-shadow: 0px 16px 23px -11px #10101017;
 }

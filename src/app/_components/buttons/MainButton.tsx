@@ -9,7 +9,8 @@ const MainButton: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`flex text-sm font-bold items-center justify-center gap-2   rounded-full  transition-all hover:opacity-80 py-3 px-4 ${
+    type="button"
+      className={`flex text-sm !cursor-pointer font-bold items-center justify-center gap-2   rounded-full  transition-all hover:opacity-80 py-3 px-4 ${
         className ?? className
       } ${
         themeType === ColorType.SECONDARY

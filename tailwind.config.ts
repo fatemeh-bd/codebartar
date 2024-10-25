@@ -19,10 +19,12 @@ const config: Config = {
           700: "#4b5563",
         },
         black: "#09090b",
+        success: "#22c55e",
       },
-      fontSize:{
-        xl:"1.125rem"
-      }
+      fontSize: {
+        lg: "1.125rem",
+        xl: "1.25rem",
+      },
     },
   },
   plugins: [],

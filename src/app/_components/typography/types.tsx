@@ -5,4 +5,5 @@ export interface ParagraphType {
   children: React.ReactNode;
   type?: ColorType;
   size?: Sizes;
+  className?: string;
 }

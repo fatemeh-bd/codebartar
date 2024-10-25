@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@types/swiper": "^6.0.0",
     "heroicons": "^2.1.5",
     "next": "15.0.0",
     "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020"
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/node": "^20",

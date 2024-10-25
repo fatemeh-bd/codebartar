@@ -14,7 +14,13 @@ const Title = ({
 }) => {
   return (
     <h2
-      className={`${size === Sizes.lg ? "md:text-2xl text-xl" : "text-xl"} font-black ${
+      className={`${
+        size === Sizes.lg
+          ? "md:text-2xl text-xl"
+          : size === Sizes.xs
+          ? "text-sm !font-bold"
+          : "text-lg"
+      } font-black ${
         color === ColorType.PRIMARY && "text-primary"
       } ${className}`}
     >

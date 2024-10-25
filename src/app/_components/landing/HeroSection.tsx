@@ -4,7 +4,6 @@ import MainButton from "../buttons/MainButton";
 import Paragraph from "../typography/Paragraph";
 import { TicketIcon } from "@heroicons/react/24/outline";
 import { ArrowUpLeftIcon } from "@heroicons/react/16/solid";
-import vector from "../../assets/images/mainVector.png";
 import { ColorType, Sizes } from "@/_utiles/enums";
 import Image from "next/image";
 import GradientBox from "../GradientBox";
@@ -41,7 +40,7 @@ const HeroSection = () => {
           <div className="flex-shrink-0 flex justify-center md:w-72 w-full md:order-2 -order-1">
             <Image
               className="max-w-full"
-              src={vector}
+              src={"/images/mainVector.png"}
               alt="vector"
               width={300}
               height={300}
