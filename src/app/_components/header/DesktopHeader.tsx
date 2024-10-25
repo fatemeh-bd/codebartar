@@ -9,6 +9,9 @@ import {
 } from "@heroicons/react/24/outline";
 import Paragraph from "../typography/Paragraph";
 import { ColorType, Sizes } from "../../../_utiles/enums";
+import Link from "next/link";
+import { ChevronLeftIcon } from "@heroicons/react/20/solid";
+import SubMenu from "./SubMenu";
 
 const DesktopHeader = () => {
   return (
@@ -17,12 +20,15 @@ const DesktopHeader = () => {
         <Logo />
         <nav>
           <ul className="flex items-center gap-6">
-            {navItems.map((item, index) => (
-              <li className="flex items-center gap-2" key={index}>
-                {item.text}
-                {!item.path && <ChevronDownIcon className="size-3" />}
-              </li>
-            ))}
+            {navItems.map((item, index) =>
+              item.path ? (
+                <li className="flex items-center gap-2 relative" key={index}>
+                  {item.text}
+                </li>
+              ) : (
+                <SubMenu data={item}key={index} />
+              )
+            )}
           </ul>
         </nav>
       </FlexItemCenter>

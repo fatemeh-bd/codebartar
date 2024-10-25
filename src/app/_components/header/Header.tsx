@@ -6,13 +6,26 @@ import useScreenWidth from "../hooks/useScreenWidth";
 import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
 import { startMobileSize } from "@/_utiles/enums";
-export const navItems = [
+import { NavItemType } from "./types";
+export const navItems: NavItemType[] = [
   {
     text: "دسته بندی آمـــوزشها",
     childrens: [
       {
         path: "/",
         text: "برنامه نویسی وب",
+      },
+      {
+        path: "/",
+        text: "دیتا ساینس",
+      },
+      {
+        path: "/",
+        text: "زبانهای برنامه نویسی",
+      },
+      {
+        path: "/",
+        text: "طراحی دیتابیس",
       },
     ],
   },
@@ -51,7 +64,9 @@ export const Logo = () => {
         ></path>
       </svg>
       <span className="flex flex-col items-start">
-        <span className="font-semibold text-sm !text-secondary-700">آکـادمـــــی</span>
+        <span className="font-semibold text-sm !text-secondary-700">
+          آکـادمـــــی
+        </span>
         <span className="font-black text-xl">کد برتـــر</span>
       </span>
     </Link>
