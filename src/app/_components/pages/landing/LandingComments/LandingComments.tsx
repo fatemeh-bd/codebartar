@@ -18,7 +18,7 @@ const LandingComments = () => {
           دارند."
         />
       </div>
-      <div className="md:col-span-8 w-full max-w-xl mx-auto p-[1.5rem]">
+      <div className="md:col-span-8 w-full max-w-xl mx-auto md:p-[1rem] p-[2rem]">
         <CommenstSlider />
       </div>
     </div>

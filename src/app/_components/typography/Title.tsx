@@ -21,7 +21,7 @@ const Title = ({
           ? "text-sm !font-bold"
           : "text-lg"
       } font-black ${
-        color === ColorType.PRIMARY && "text-primary"
+        color === ColorType.PRIMARY ? "text-primary":"text-black"
       } ${className}`}
     >
       {children}

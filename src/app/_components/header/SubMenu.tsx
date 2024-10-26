@@ -10,7 +10,7 @@ const SubMenu = ({ data }: { data: NavItemType }) => {
   const [openSubMenu, setOpenSubMenu] = useState(false);
   return (
     <li
-      className="flex items-center gap-2 relative"
+      className="flex items-center gap-2 relative cursor-pointer"
       onMouseEnter={() => setOpenSubMenu(true)}
       onMouseLeave={() => setOpenSubMenu(false)}
     >

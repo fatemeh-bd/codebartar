@@ -10,7 +10,7 @@ const MainButton: React.FC<ButtonProps> = ({
 }) => {
   const buttonClass = `flex text-sm cursor-pointer font-bold items-center justify-center gap-2 rounded-full transition-all hover:opacity-80 py-3 px-4 ${className} ${
     themeType === ColorType.SECONDARY
-      ? "bg-secondary-200 hover:text-primary"
+      ? "bg-secondary-200 text-black hover:text-primary"
       : "bg-primary text-white"
   }`;
 

@@ -7,10 +7,31 @@
   animation-duration: 0.1s;
   font-family: var(--font-yakan);
 }
-:root {
+/* :root {
   --background: #fff;
-  --border: #e4e4e7;
   --foreground: #09090b;
+  } */
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --secondary100:#fafafa;
+  --secondary200: #f4f4f5;
+  --secondary700:#4b5563;
+
+  --black: #09090b;
+  --border: #e4e4e7;
+}
+
+.dark {
+  --background: #000;
+  --foreground: #ffffff;
+  --secondary100:#17171c;
+  --secondary200: #17171c;
+  --secondary700:#6b7280;
+  --black: #ffffff;
+  --border: #27272a;
+
 }
 body {
   direction: rtl;

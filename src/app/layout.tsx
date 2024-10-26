@@ -42,9 +42,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
+    <html lang="fa" >
       <body
-        className={`${yekanBakh.variable} ${yekanBakh.variable} antialiased font-[family-name:var(--font-yakan)] `}
+        className={`${yekanBakh.variable} ${yekanBakh.variable} bg-background antialiased font-[family-name:var(--font-yakan)] `}
       >
         <Header />
         <main className="flex-auto p-5 max-w-7xl mx-auto">{children}</main>

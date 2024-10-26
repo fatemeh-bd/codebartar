@@ -38,8 +38,8 @@ export const navItems: NavItemType[] = [
 const Header = () => {
   const isMobile = useScreenWidth(startMobileSize);
   return (
-    <header className="bg-white/80 backdrop-blur-xl py-4 border-b border-border border-secondary-500 sticky top-0 z-[999]">
-      <div className="relative mx-auto px-5 max-w-7xl">
+    <header className="bg-background/80 dark:bg-background backdrop-blur-xl py-4 border-b border-border border-secondary-500 sticky top-0 z-[999]">
+      <div className="relative mx-auto px-5 max-w-7xl text-secondary-700">
         {isMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </header>

@@ -44,7 +44,7 @@ const items = [
 const WhayUs = () => {
   return (
     <div className="my-8 relative">
-      <Title className="mx-auto relative bg-background w-fit z-50 py-3  border border-border rounded-2xl px-8">
+      <Title className="mx-auto relative bg-background text-black w-fit z-50 py-3  border border-border rounded-2xl px-8">
         چرا آکــــادمـــــی کد برتـــر ؟
       </Title>
       <div className="relative -mt-7 z-10 pt-12 bg-secondary-200 rounded-3xl">
@@ -54,7 +54,7 @@ const WhayUs = () => {
               key={index}
               className={`flex flex-col items-center justify-center text-center ${item.color} space-y-3 cursor-default animate-pulse`}
             >
-              <span className="flex items-center justify-center w-20 h-20 bg-white rounded-full">
+              <span className="flex items-center justify-center w-20 h-20 bg-background rounded-full">
                 {item.svg}
               </span>
               <span className="font-bold text-sm line-clamp-1">

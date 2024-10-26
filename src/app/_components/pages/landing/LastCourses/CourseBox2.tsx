@@ -11,7 +11,7 @@ import { ClockIcon } from "@heroicons/react/24/outline";
 
 const CourseBox2 = () => {
   return (
-    <div className="p-4 bg-white rounded-xl space-y-2 my-6">
+    <div className="p-4 bg-background rounded-xl space-y-2 my-6">
       <div className="relative mb-4">
         <Image
           className="rounded-xl w-full"
@@ -49,7 +49,7 @@ const CourseBox2 = () => {
       >
         <ClockIcon className="size-4" />
         زمان مطالعه:
-        <span className="font-bold"> ۲۰ دقیقه</span>
+        <span className="font-bold text-black"> ۲۰ دقیقه</span>
       </Paragraph>
     </div>
   );

@@ -13,17 +13,17 @@ const MobileHeader = () => {
   return (
     <FlexBetween>
       <FlexItemCenter>
-        <Bars3Icon className="size-10 bg-secondary-100 rounded-full p-2" />
+        <Bars3Icon className="size-10 bg-secondary-100 text-black rounded-full p-2" />
 
         <Logo />
       </FlexItemCenter>
 
       <FlexItemCenter>
         <div className="relative">
-          <ShoppingCartIcon className="size-9 bg-secondary-100 rounded-full p-2" />
+          <ShoppingCartIcon className="size-9 bg-secondary-100 text-black rounded-full p-2" />
           <Counter value={2} />
         </div>
-        <UserIcon className="size-9 bg-secondary-100 rounded-full p-2" />
+        <UserIcon className="size-9 bg-secondary-100 text-black rounded-full p-2" />
         <ChevronDownIcon className="size-5" />
       </FlexItemCenter>
     </FlexBetween>

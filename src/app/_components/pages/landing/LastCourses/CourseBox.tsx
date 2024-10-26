@@ -34,14 +34,14 @@ const CourseBox = ({ data }: { data: CourseType }) => {
         </Link>
         <Link
           href={"/"}
-          className="absolute left-3 top-3 h-11 inline-flex items-center justify-center gap-1 bg-black/20 rounded-full text-white transition-all hover:opacity-80 px-4"
+          className="absolute left-3 top-3 h-11 inline-flex items-center justify-center gap-1  rounded-full text-white transition-all hover:opacity-80 px-4"
         >
           <Squares2X2Icon className="size-6" />
           <span className="font-semibold text-sm">{data.label}</span>
         </Link>
       </div>
       <div className="w-[90%] mx-auto space-y-5">
-        <div className="bg-secondary-200 space-y-1 rounded-b-3xl py-4 px-6 ">
+        <div className="bg-gradient-to-t from-secondary-200 to-transparent space-y-1 rounded-b-3xl py-4 px-6 ">
           <Paragraph
             type={ColorType.SUCCSESS}
             className="list-disc list-item mr-3"

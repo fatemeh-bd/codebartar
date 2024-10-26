@@ -20,7 +20,7 @@ const CommenstSlider = () => {
       className="commentSwiper"
     >
       <SwiperSlide className="rounded-2xl commentShadow">
-        <div className="flex flex-col text-center bg-white space-y-6 items-center rounded-2xl p-8 border border-secondary-500">
+        <div className="flex flex-col text-center bg-background space-y-6 items-center rounded-2xl p-8 border border-secondary-500">
           <Paragraph size={Sizes.sm}>
             من به تیم شما بابت پشتیبانی عالیتان از وبسایتتان تشکر می‌کنم. سوالات
             و مشکلات من به سرعت پاسخ داده می‌شوند و همیشه یک راه حل مناسب برای
@@ -34,7 +34,7 @@ const CommenstSlider = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="rounded-2xl commentShadow">
-        <div className="flex flex-col text-center bg-white space-y-6 items-center rounded-2xl p-8 border border-secondary-500">
+        <div className="flex flex-col text-center bg-background space-y-6 items-center rounded-2xl p-8 border border-secondary-500">
           <Paragraph size={Sizes.sm}>
             من به تیم شما بابت پشتیبانی عالیتان از وبسایتتان تشکر می‌کنم. سوالات
             و مشکلات من به سرعت پاسخ داده می‌شوند و همیشه یک راه حل مناسب برای

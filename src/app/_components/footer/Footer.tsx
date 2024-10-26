@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <div className="max-w-7xl p-5 mx-auto mt-20 space-y-8">
       <FlexItemCenter gap="gap-4">
-        <div className="flex-grow border-t border-border border-dashed"></div>
+        <div className="flex-grow border-t border-border border-dashed border-secondary-500"></div>
         <MainButton
           onClick={scrollToTop}
           themeType={ColorType.SECONDARY}
@@ -94,7 +94,7 @@ const Footer = () => {
       </FlexBetween>
       <FlexItemCenter>
         <Paragraph size={Sizes.xs}>© کليه حقوق محفوظ است</Paragraph>
-        <div className="flex-grow border-t border-border border-dashed"></div>
+        <div className="flex-grow border-t border-border border-dashed border-secondary-500"></div>
 
       </FlexItemCenter>
     </div>
