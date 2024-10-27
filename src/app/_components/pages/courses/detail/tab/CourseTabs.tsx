@@ -59,7 +59,7 @@ const CourseTabs = () => {
     <>
       <div className="sticky top-24 z-10">
         <div className="relative overflow-x-auto">
-          <ul className="inline-flex gap-2 bg-secondary-200 border border-border border-secondary-500 text-base rounded-full p-1">
+          <ul className="inline-flex gap-2 bg-secondary-200 border border-border border-secondary-500 md:text-base text-xs rounded-full p-1">
             {tabs.map(renderTab)}
           </ul>
         </div>

@@ -87,7 +87,7 @@ const HeadlinesAccordions = ({ lists }: { lists: AccordionType[] }) => {
               {headLines.map(({ id: childId, name, time }, index) => (
                 <FlexBetween
                   key={childId}
-                  className="border border-secondary-500 py-2 my-2 px-4 rounded-xl text-sm"
+                  className="border lg:flex-nowrap flex-wrap border-secondary-500 py-2 my-2 px-4 rounded-xl text-sm"
                 >
                   <FlexItemCenter gap="gap-6">
                     <span className="text-secondary-700">{index + 1}</span>
@@ -98,7 +98,7 @@ const HeadlinesAccordions = ({ lists }: { lists: AccordionType[] }) => {
                       {name}
                     </Link>
                   </FlexItemCenter>
-                  <FlexItemCenter className="!text-xs">
+                  <FlexItemCenter className="!text-xs !mr-auto">
                     <FlexCenter gap="gap-1 text-secondary-700">
                       {time}
                       <ClockIcon className="size-4" />
