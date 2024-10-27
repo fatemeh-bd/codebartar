@@ -18,7 +18,7 @@ const Paragraph = ({ children, type, size, className }: ParagraphType) => {
           ? "text-primary"
           : type === ColorType.BLACK
           ? "text-black"
-          : type === ColorType.SUCCSESS
+          : type === ColorType.SUCCESS
           ? "text-success"
           : "text-secondary-700"
       } ${className || ""}`}

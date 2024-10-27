@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import { CourseType } from "../types";
-import SectionTitle from "../SectionTitle";
+import TitleBox from "../TitleBox";
 
 const sampleData: CourseType[] = [
   {
@@ -81,7 +81,7 @@ const LastCourses = () => {
     <div>
       <GradientBox className="!p-5">
         <FlexBetween>
-          <SectionTitle title=" آخرین دوره های" desciption="منتشر شده" />
+          <TitleBox title=" آخرین دوره های" desciption="منتشر شده" />
          
           <MainButton
             themeType={ColorType.SECONDARY}

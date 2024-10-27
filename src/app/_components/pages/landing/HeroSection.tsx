@@ -44,6 +44,7 @@ const HeroSection = () => {
               alt="vector"
               width={300}
               height={300}
+              loading="eager"
             />
           </div>
         </div>

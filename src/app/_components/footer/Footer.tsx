@@ -10,7 +10,7 @@ import { scrollToTop } from "@/_utiles/helper";
 import { ClockIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import Paragraph from "../typography/Paragraph";
 import FooterItem from "./FooterItem";
-import FooterTitle from "./FooterTitle";
+import SectionTitle from "../typography/SectionTitle";
 import SocialMedias from "./SocialMedias";
 import NewsLetter from "./NewsLetter";
 
@@ -54,7 +54,7 @@ const Footer = () => {
       </FlexBetween>
       <FlexBetween className="md:flex-nowrap flex-wrap gap-8">
         <div className="md:w-5/12 w-full bg-secondary-200 rounded-2xl p-6">
-          <FooterTitle title="درباره" />
+          <SectionTitle title="درباره" />
           <Paragraph size={Sizes.sm}>
             نابغه یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران
             است که همیشه تلاش کرده تا بتواند جدیدترین و بروزترین مقالات و
@@ -64,9 +64,9 @@ const Footer = () => {
         </div>
         <div className="md:w-7/12 w-full gap-8 grid grid-cols-5">
           <div className="md:col-span-2 col-span-5">
-            <FooterTitle title="لینک های مفید" />
+            <SectionTitle title="لینک های مفید" />
 
-            <ul className="flex flex-col space-y-1 text-secondary-700 [&>li]:text-sm font-medium">
+            <ul className="flex flex-col space-y-1 text-secondary-700 [&>li]:text-sm ">
               <li>قوانین و مقررات</li>
               <li>مدرسان</li>
               <li>درباره نابغه</li>
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="md:col-span-3 col-span-5 space-y-6">
             <div>
-              <FooterTitle
+              <SectionTitle
                 title="
 خبرنامه"
               />
@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
             <NewsLetter />
             <div>
-              <FooterTitle title="شبکه های اجتماعی" />
+              <SectionTitle title="شبکه های اجتماعی" />
               <SocialMedias />
             </div>
           </div>

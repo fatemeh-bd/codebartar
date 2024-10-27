@@ -1,7 +1,7 @@
 import React from "react";
 import FlexItemCenter from "../flex/FlexItemCenter";
 
-const FooterTitle = ({ title }: { title: string }) => {
+const SectionTitle = ({ title }: { title: string }) => {
   return (
     <FlexItemCenter gap="gap-3" className="mb-4">
       <FlexItemCenter>
@@ -13,4 +13,4 @@ const FooterTitle = ({ title }: { title: string }) => {
   );
 };
 
-export default FooterTitle;
+export default SectionTitle;

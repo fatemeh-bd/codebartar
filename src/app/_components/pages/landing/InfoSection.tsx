@@ -1,12 +1,12 @@
 import React from "react";
 import GradientBox from "../../GradientBox";
-import SectionTitle from "./SectionTitle";
+import TitleBox from "./TitleBox";
 import CourseBox2 from "./LastCourses/CourseBox2";
 
 const InfoSection = () => {
   return (
     <GradientBox className="lg:flex lg:items-center lg:gap-10">
-      <SectionTitle
+      <TitleBox
         className="lg:w-4/12 flex !items-start gap-5 lg:mb-0 mb-8"
         title=" از گوشه و اطراف دنیای برنامه‌نویسی"
         desciption="نوشتن کار جالبیه که از هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در نابغه فضای رو به شکلی آماده کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس عضو نابغه قرار بدید"

@@ -1,14 +1,14 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Paragraph from "../../../typography/Paragraph";
-import { ColorType, Sizes } from "@/_utiles/enums";
+import { ColorType, gradientToTop, Sizes } from "@/_utiles/enums";
 import Title from "../../../typography/Title";
 import FlexCenter from "../../../flex/FlexCenter";
 import {
   ArrowUpLeftIcon,
   ClockIcon,
-  HeartIcon,
   Square2StackIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
@@ -19,11 +19,14 @@ import { CourseType } from "../types";
 import MainButton from "../../../buttons/MainButton";
 import Teacher from "./Teacher";
 import Like from "./Like";
+import { useRouter } from "next/navigation";
+import Status from "./Status";
 const CourseBox = ({ data }: { data: CourseType }) => {
+  const router = useRouter();
   return (
     <div>
       <div className="relative z-10">
-        <Link href={"/"} className="block">
+        <Link href={"/courses/1"} className="block">
           <Image
             src={data.img}
             className="w-full rounded-3xl"
@@ -41,14 +44,8 @@ const CourseBox = ({ data }: { data: CourseType }) => {
         </Link>
       </div>
       <div className="w-[90%] mx-auto space-y-5">
-        <div className="bg-gradient-to-t from-secondary-200 to-transparent space-y-1 rounded-b-3xl py-4 px-6 ">
-          <Paragraph
-            type={ColorType.SUCCSESS}
-            className="list-disc list-item mr-3"
-            size={Sizes.sm}
-          >
-            {data.status}
-          </Paragraph>
+        <div className={`${gradientToTop}`}>
+          <Status text="تکمیل شده" />
           <Title
             size={Sizes.xs}
             className="line-clamp-1 hover:text-primary cursor-pointer"
@@ -71,7 +68,7 @@ const CourseBox = ({ data }: { data: CourseType }) => {
           <FlexItemCenter>
             {data.type === "free" ? (
               <Paragraph
-                type={ColorType.SUCCSESS}
+                type={ColorType.SUCCESS}
                 size={Sizes.xl}
                 className="font-black"
               >
@@ -93,7 +90,10 @@ const CourseBox = ({ data }: { data: CourseType }) => {
           </FlexItemCenter>
         </FlexBetween>
         <FlexCenter>
-          <MainButton className="w-[90%]">
+          <MainButton
+            className="w-[90%]"
+            onClick={() => router.push("/courses/1")}
+          >
             مشاهده دوره
             <ArrowUpLeftIcon className="size-6" />
           </MainButton>

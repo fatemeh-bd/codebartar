@@ -7,25 +7,25 @@ import Footer from "./_components/footer/Footer";
 const yekanBakh = localFont({
   src: [
     {
-      path: "/fonts/yekan/woff/YekanBakh-SemiBold.woff",
+      path: "/fonts/yekan/woff/YekanBakh-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
       path: "/fonts/yekan/woff/YekanBakh-Bold.woff",
-      weight: "600",
+      weight: "500",
       style: "normal",
     },
     {
       path: "/fonts/yekan/woff/YekanBakh-ExtraBold.woff",
-      weight: "700",
+      weight: "600",
       style: "normal",
     },
-    {
-      path: "/fonts/yekan/woff/YekanBakh-ExtraBlack.woff",
-      weight: "900",
-      style: "normal",
-    },
+    // {
+    //   path: "/fonts/yekan/woff/YekanBakh-ExtraBlack.woff",
+    //   weight: "700",
+    //   style: "normal",
+    // },
   ],
   variable: "--font-yakan",
   display: "swap",
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" >
+    <html lang="fa">
       <body
         className={`${yekanBakh.variable} ${yekanBakh.variable} bg-background antialiased font-[family-name:var(--font-yakan)] `}
       >

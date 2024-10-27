@@ -5,7 +5,7 @@ import Title from "../../typography/Title";
 import Paragraph from "../../typography/Paragraph";
 import { ColorType, Sizes } from "@/_utiles/enums";
 
-const SectionTitle = ({
+const TitleBox = ({
   title,
   desciption,
   className,
@@ -27,4 +27,4 @@ const SectionTitle = ({
   );
 };
 
-export default SectionTitle;
+export default TitleBox;
