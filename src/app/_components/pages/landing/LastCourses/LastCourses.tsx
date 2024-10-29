@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
 import GradientBox from "../../../GradientBox";
-import Title from "../../../typography/Title";
-import Paragraph from "../../../typography/Paragraph";
-import {
-  AcademicCapIcon,
-  ArrowLeftIcon,
-  ArrowUpLeftIcon,
-} from "@heroicons/react/16/solid";
-import FlexCenter from "../../../flex/FlexCenter";
-import { ColorType, Sizes } from "@/_utiles/enums";
+
+import { AcademicCapIcon, ArrowUpLeftIcon } from "@heroicons/react/16/solid";
+
+import { ColorType } from "@/_utiles/enums";
 import MainButton from "../../../buttons/MainButton";
 import FlexBetween from "../../../flex/FlexBetween";
 import CourseBox from "./CourseBox";
@@ -21,7 +16,7 @@ import { Navigation } from "swiper/modules";
 import { CourseType } from "../types";
 import TitleBox from "../TitleBox";
 
-const sampleData: CourseType[] = [
+export const sampleData: CourseType[] = [
   {
     id: 1,
     title: "دوره پروژه محور React و Next",
@@ -82,7 +77,7 @@ const LastCourses = () => {
       <GradientBox className="!p-5">
         <FlexBetween>
           <TitleBox title=" آخرین دوره های" desciption="منتشر شده" />
-         
+
           <MainButton
             themeType={ColorType.SECONDARY}
             className="md:!w-fit size-10 md:!p-4 !p-1"

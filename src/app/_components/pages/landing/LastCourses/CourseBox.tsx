@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Paragraph from "../../../typography/Paragraph";
-import { ColorType,  Sizes } from "@/_utiles/enums";
+import { ColorType, Sizes } from "@/_utiles/enums";
 import Title from "../../../typography/Title";
 import FlexCenter from "../../../flex/FlexCenter";
 import {
@@ -22,10 +22,16 @@ import Like from "./Like";
 import { useRouter } from "next/navigation";
 import Status from "./Status";
 import GradientBox from "@/app/_components/GradientBox";
-const CourseBox = ({ data }: { data: CourseType }) => {
+const CourseBox = ({
+  data,
+  className,
+}: {
+  data: CourseType;
+  className?: string;
+}) => {
   const router = useRouter();
   return (
-    <div>
+    <div className={className || ""}>
       <div className="relative z-10">
         <Link href={"/courses/1"} className="block">
           <Image

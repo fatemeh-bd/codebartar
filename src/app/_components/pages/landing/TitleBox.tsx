@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import FlexItemCenter from "../../flex/FlexItemCenter";
 import { AcademyIcon } from "./LastCourses/LastCourses";
 import Title from "../../typography/Title";
@@ -11,7 +11,7 @@ const TitleBox = ({
   className,
 }: {
   title: string;
-  desciption: string;
+  desciption: string | ReactNode;
   className?: string;
 }) => {
   return (
@@ -21,7 +21,12 @@ const TitleBox = ({
         <Title size={Sizes.lg} color={ColorType.PRIMARY}>
           {title}
         </Title>
-        <Paragraph>{desciption}</Paragraph>
+
+        {typeof desciption === "string" ? (
+          <Paragraph>{desciption}</Paragraph>
+        ) : (
+          desciption
+        )}
       </div>
     </FlexItemCenter>
   );
