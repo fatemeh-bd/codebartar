@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import FlexBetween from "../flex/FlexBetween";
-import FlexItemCenter from "../flex/FlexItemCenter";
-import { Counter, Logo, navItems } from "./Header";
+import FlexBetween from "../../flex/FlexBetween";
+import FlexItemCenter from "../../flex/FlexItemCenter";
+import { navItems } from "../Header";
 import {
   ChevronDownIcon,
   MoonIcon,
@@ -10,14 +10,16 @@ import {
   SunIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
-import Paragraph from "../typography/Paragraph";
-import { ColorType, Sizes } from "../../../_utiles/enums";
-import SubMenu from "./SubMenu";
+import Paragraph from "../../typography/Paragraph";
+import { ColorType, Sizes } from "../../../../_utiles/enums";
+import SubMenu from "../SubMenu";
+import { Logo } from "./Logo";
+import { Counter } from "./Counter";
 
 const DesktopHeader = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
-    <FlexBetween>
+    <FlexBetween className="md:flex hidden">
       <FlexItemCenter gap={"gap-8"}>
         <Logo />
         <nav>

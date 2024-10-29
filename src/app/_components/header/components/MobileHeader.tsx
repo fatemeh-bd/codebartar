@@ -1,17 +1,18 @@
 import React from "react";
-import FlexBetween from "../flex/FlexBetween";
-import FlexItemCenter from "../flex/FlexItemCenter";
+import FlexBetween from "../../flex/FlexBetween";
+import FlexItemCenter from "../../flex/FlexItemCenter";
 import {
   Bars3Icon,
   ChevronDownIcon,
   ShoppingCartIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
-import { Counter, Logo } from "./Header";
+import { Logo } from "./Logo";
+import { Counter } from "./Counter";
 
 const MobileHeader = () => {
   return (
-    <FlexBetween>
+    <FlexBetween className="md:hidden flex">
       <FlexItemCenter>
         <Bars3Icon className="size-10 bg-secondary-100 text-black rounded-full p-2" />
 

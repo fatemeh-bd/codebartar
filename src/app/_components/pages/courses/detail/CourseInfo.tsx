@@ -12,55 +12,57 @@ import { ArrowUpLeftIcon } from "@heroicons/react/20/solid";
 import FlexItemCenter from "../../../flex/FlexItemCenter";
 import Image from "next/image";
 import Link from "next/link";
+import GradientBox from "@/app/_components/GradientBox";
+import Teacher from "../../landing/LastCourses/Teacher";
 
 const CourseInfo = () => {
   return (
     <div className="space-y-6">
-        <div className="bg-gradient-to-b from-secondary-200 to-transparent space-y-6 rounded-2xl pb-4 pt-0 px-6 ">
-      <div className="bg-background rounded-b-2xl  px-3 pb-1 pt-4">
-        <SectionTitle title="نام نویسی در دوره" />
-      </div>
-      <FlexBetween>
-        <Paragraph>هزینه ثبت نام:</Paragraph>
-        <div className="flex gap-2 items-center">
-          <Paragraph
-            size={Sizes.xl}
-            type={ColorType.BLACK}
-            className="font-black"
-          >
-            {numberWithCommas(20000)}
-          </Paragraph>
-          <Toman />
+      <GradientBox type="bottom" className="space-y-4 pt-0">
+        <div className="bg-background rounded-b-2xl  px-3 pb-1 pt-4">
+          <SectionTitle title="نام نویسی در دوره" />
         </div>
-      </FlexBetween>
-      <FlexCenter>
-        <MainButton className="w-[90%]">
-          اضافه به سبد
-          <ArrowUpLeftIcon className="size-5" />
-        </MainButton>
-        <Like />
-      </FlexCenter>
-
-    </div>
+        <FlexBetween>
+          <Paragraph>هزینه ثبت نام:</Paragraph>
+          <div className="flex gap-2 items-center">
+            <Paragraph
+              size={Sizes.xl}
+              type={ColorType.BLACK}
+              className="font-black"
+            >
+              {numberWithCommas(20000)}
+            </Paragraph>
+            <Toman />
+          </div>
+        </FlexBetween>
+        <FlexCenter>
+          <MainButton className="w-[90%]">
+            اضافه به سبد
+            <ArrowUpLeftIcon className="size-5" />
+          </MainButton>
+          <Like />
+        </FlexCenter>
+      </GradientBox>
       <div>
         <SectionTitle title="مدرس دوره" />
-        <FlexItemCenter>
-          <Image
-            src={"/images/avatar.jpeg"}
-            alt="avatar"
-            className="rounded-full"
-            width={40}
-            height={40}
-          />
-          <div className="font-medium">
-            <Paragraph size={Sizes.sm} type={ColorType.BLACK}>
+        <Teacher
+          avatar="/images/avatar.jpeg"
+          name={
+            <Paragraph
+              size={Sizes.sm}
+              type={ColorType.BLACK}
+              className="font-medium"
+            >
               جلال بهرامی راد
             </Paragraph>
-            <Link href={"/"} className="text-primary text-xs">
+          }
+          desc={
+            <Link href={"/"} className="text-primary text-xs font-medium">
               دیدن رزومه
             </Link>
-          </div>
-        </FlexItemCenter>
+          }
+        />
+
         <div className="bg-secondary-200 rounded-tl-2xl rounded-b-2xl text-sm text-secondary-700 p-4 mt-2">
           <Paragraph size={Sizes.sm}>
             اول داستان، طراح گرافیک بودم و ۲ سالی به عنوان طراح مشغول بودم، بعد

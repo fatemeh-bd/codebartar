@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Paragraph from "../../../typography/Paragraph";
-import { ColorType, gradientToTop, Sizes } from "@/_utiles/enums";
+import { ColorType,  Sizes } from "@/_utiles/enums";
 import Title from "../../../typography/Title";
 import FlexCenter from "../../../flex/FlexCenter";
 import {
@@ -21,6 +21,7 @@ import Teacher from "./Teacher";
 import Like from "./Like";
 import { useRouter } from "next/navigation";
 import Status from "./Status";
+import GradientBox from "@/app/_components/GradientBox";
 const CourseBox = ({ data }: { data: CourseType }) => {
   const router = useRouter();
   return (
@@ -44,7 +45,7 @@ const CourseBox = ({ data }: { data: CourseType }) => {
         </Link>
       </div>
       <div className="w-[90%] mx-auto space-y-5">
-        <div className={`${gradientToTop}`}>
+        <GradientBox type="top">
           <Status text="تکمیل شده" />
           <Title
             size={Sizes.xs}
@@ -52,7 +53,7 @@ const CourseBox = ({ data }: { data: CourseType }) => {
           >
             {data.title}
           </Title>
-        </div>
+        </GradientBox>
         <FlexItemCenter gap="gap-6" className="text-xs my-4 text-secondary-700">
           <FlexCenter gap="gap-1">
             <Square2StackIcon className="size-4" />

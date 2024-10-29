@@ -5,7 +5,6 @@ import MainButton from "../buttons/MainButton";
 import { ColorType, Sizes } from "@/_utiles/enums";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import FlexBetween from "../flex/FlexBetween";
-import { Logo } from "../header/Header";
 import { scrollToTop } from "@/_utiles/helper";
 import { ClockIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import Paragraph from "../typography/Paragraph";
@@ -13,6 +12,7 @@ import FooterItem from "./FooterItem";
 import SectionTitle from "../typography/SectionTitle";
 import SocialMedias from "./SocialMedias";
 import NewsLetter from "./NewsLetter";
+import { Logo } from "../header/components/Logo";
 
 const Footer = () => {
   return (
@@ -95,7 +95,6 @@ const Footer = () => {
       <FlexItemCenter>
         <Paragraph size={Sizes.xs}>© کليه حقوق محفوظ است</Paragraph>
         <div className="flex-grow border-t border-border border-dashed border-secondary-500"></div>
-
       </FlexItemCenter>
     </div>
   );

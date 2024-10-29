@@ -8,6 +8,7 @@ import React, { useState, useRef } from "react";
 import { TabType } from "./types";
 import Intro from "./Intro";
 import Headlines from "./Headlines";
+import Comments from "../commnets/Comments";
 
 const tabs: TabType[] = [
   { id: 1, label: "معرفی", icon: PencilIcon },
@@ -19,13 +20,19 @@ const CourseTabs = () => {
   const [selectedTab, setSelectedTab] = useState(1);
   const introRef = useRef<HTMLDivElement>(null);
   const headlinesRef = useRef<HTMLDivElement>(null);
+  const commentsRef = useRef<HTMLDivElement>(null);
 
   const handleTabClick = (tabId: number) => {
     setSelectedTab(tabId);
 
     const offset = 160;
 
-    const targetRef = tabId === 1 ? introRef.current : headlinesRef.current;
+    const targetRef =
+      tabId === 1
+        ? introRef.current
+        : tabId === 2
+        ? headlinesRef.current
+        : commentsRef.current;
 
     if (targetRef) {
       const targetPosition =
@@ -69,6 +76,9 @@ const CourseTabs = () => {
       </div>
       <div ref={headlinesRef}>
         <Headlines />
+      </div>
+      <div ref={commentsRef}>
+        <Comments />
       </div>
     </>
   );

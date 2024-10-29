@@ -9,8 +9,8 @@ const Teacher = ({
   desc,
   avatar,
 }: {
-  name: string;
-  desc: string;
+  name: string | React.ReactNode;
+  desc: string | React.ReactNode;
   avatar: string;
 }) => {
   return (
@@ -22,11 +22,19 @@ const Teacher = ({
         width={40}
         height={40}
       />
-      <div className=" space-y-1 text-right">
-        <Paragraph size={Sizes.xs}>{name}</Paragraph>
+      <div className="space-y-1 text-right">
+        {typeof name === "string" ? (
+          <Paragraph size={Sizes.xs}>{name}</Paragraph>
+        ) : (
+          name
+        )}
+        {
+          typeof desc === "string" ?
         <Paragraph size={Sizes.xs} className="font-bold" type={ColorType.BLACK}>
           {desc}
-        </Paragraph>
+        </Paragraph>:desc
+
+        }
       </div>
     </FlexItemCenter>
   );
