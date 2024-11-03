@@ -1,8 +1,8 @@
 import { forwardRef } from "react";
 import { InputProps } from "./types";
-export const boxClass = "bg-secondary-200 p-2 rounded-xl text-sm text-foreground";
+export const boxClass = "bg-secondary-200 p-3 rounded-xl text-sm text-foreground";
 export const inputClass =
-  "form-input p-2 my-2  w-full !ring-0 !ring-offset-0 h-10  !border-0  ";
+  "form-input my-2  w-full !ring-0 !ring-offset-0  !border-0  ";
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ className = "", icon, ...rest }, ref) => {
     const classList = `${inputClass} ${className} ${boxClass}`;
@@ -14,7 +14,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           {...rest}
           ref={ref}
-          className="w-full border-none !outline-none bg-transparent"
+          className="w-full border-none !outline-none bg-transparent placeholder:font-normal"
         />
         {icon}
       </div>

@@ -24,7 +24,7 @@ const SubMenu = ({ data }: { data: NavItemType }) => {
           !openSubMenu ? " invisible opacity-0" : ""
         }`}
       >
-        <ul className="flex flex-col relative w-56 max-h-[300px] bg-background border border-border shadow-2xl shadow-black/5">
+        <ul className="flex flex-col relative w-56 max-h-[300px] bg-background border border-secondary-500 shadow-2xl shadow-black/5">
           {data.childrens?.map((item, index) => (
             <li className="group" key={index}>
               <Link

@@ -6,7 +6,7 @@ const Status = ({ text }: { text: string }) => {
   return (
     <Paragraph
       type={ColorType.SUCCESS}
-      className="list-disc list-item mr-3"
+      className="list-disc list-item mr-3 text-xs"
       size={Sizes.sm}
     >
       {text}

@@ -10,19 +10,19 @@ export const navItems: NavItemType[] = [
     text: "دسته بندی آمـــوزشها",
     childrens: [
       {
-        path: "/",
+        path: "/courses",
         text: "برنامه نویسی وب",
       },
       {
-        path: "/",
+        path: "/courses",
         text: "دیتا ساینس",
       },
       {
-        path: "/",
+        path: "/courses",
         text: "زبانهای برنامه نویسی",
       },
       {
-        path: "/",
+        path: "/courses",
         text: "طراحی دیتابیس",
       },
     ],

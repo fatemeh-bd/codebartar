@@ -9,7 +9,7 @@ const Title = ({
 }: {
   className?: string;
   children: React.ReactNode;
-  size?: Sizes;
+  size?: Sizes.xl | Sizes.lg | Sizes.xs;
   color?: ColorType;
 }) => {
   return (

@@ -1,44 +1,73 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Title from "../../typography/Title";
 import Input, { boxClass } from "../../inputs/Input";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { Sizes } from "@/_utiles/enums";
+import { Squares2X2Icon, StarIcon } from "@heroicons/react/24/outline";
+import Accordion from "../../accordion/Accordion";
+import Switch from "../../switchButton/Switch";
+import Paragraph from "../../typography/Paragraph";
+import FlexBetween from "../../flex/FlexBetween";
+import Radio from "../../inputs/Radio";
+import LineSplitter from "../../LineSplitter";
 
 const Filter = () => {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleSwitchChange = () => {
-    setIsChecked((prev) => !prev);
-  };
-
   return (
-    <div className="bg-background">
+    <div className="bg-background space-y-3 font-medium">
       <div>
-        <Title>جستجو دوره</Title>
+        <Title size={Sizes.xs}>جستجو دوره</Title>
         <Input
           placeholder="عنوان دوره ..."
           icon={<MagnifyingGlassIcon className="size-6" />}
         />
       </div>
       <div className={boxClass}>
-        <label className="flex justify-between items-center cursor-pointer">
-          در حال برگزاری
-          <input
-            type="checkbox"
-            checked={isChecked}
-            onChange={handleSwitchChange}
-            className="sr-only peer"
-          />
-          <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:bg-blue-600">
-            <div
-              className={`absolute top-[2px] left-[2px] h-5 w-5 bg-white rounded-full transition-transform ${
-                isChecked ? "translate-x-full" : ""
-              }`}
-            ></div>
-          </div>
-        </label>
+        <Switch label="    در حال برگزاری" />
       </div>
+      <Accordion
+        defaultOpen={true}
+        title={
+          <>
+            <StarIcon className="size-5" />
+            نوع دوره
+          </>
+        }
+        component={
+          <div>
+            <FlexBetween>
+              <Radio name="type" value="free" label="رایگان" />
+              <Paragraph className="font-normal">۱۸</Paragraph>
+            </FlexBetween>
+            <FlexBetween>
+              <Radio name="type" value="price" label=" فقط نقدی" />
+              <Paragraph className="font-normal">۹</Paragraph>
+            </FlexBetween>
+            <FlexBetween>
+              <Radio name="type" value="vip" label="   نقدی و اعضای ویژه" />
+              <Paragraph className="font-normal">43</Paragraph>
+            </FlexBetween>
+          </div>
+        }
+      />
+      <LineSplitter />
+
+      <Accordion
+        title={
+          <>
+            <Squares2X2Icon className="size-5" />
+            دسته بندی دوره
+          </>
+        }
+        component={
+          <div>
+            <Radio name={"course"} value="laravel" label="لاراول" />
+            <Radio name={"course"} value="js" label="جاوااسکریپت" />
+            <Radio name={"course"} value="c#" label="سی شارپ" />
+          </div>
+        }
+      />
     </div>
   );
 };

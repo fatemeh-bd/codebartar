@@ -18,7 +18,7 @@ const GradientBox = ({
           ? "bg-gradient-to-b"
           : "bg-gradient-to-l "
       }
-          from-secondary-200 to-transparent rounded-2xl  p-4 mx-auto
+       space-y-1 from-secondary-200 to-transparent rounded-2xl  p-4 mx-auto
        ${className || ""}`}
     >
       {children}

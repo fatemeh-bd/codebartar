@@ -13,7 +13,7 @@
   --secondary100: #fafafa;
   --secondary200: #f4f4f5;
   --secondary700: #4b5563;
-
+  --primary: #1d4ed8;
   --black: #09090b;
   --border: #e4e4e7;
 }
@@ -76,4 +76,15 @@ body {
 }
 .commentShadow {
   box-shadow: 0px 16px 23px -11px #10101017;
+}
+
+[type="radio"]:not(:checked) {
+  appearance: none !important;
+  border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .sortDropDown .label{
+    display: none !important;
+  }
 }
